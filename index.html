@@ -1,32 +1,1263 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asrorbek</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Seotica</title>
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
+      <div class="container">
+        <div class="header__container">
+          <a href="#" class="header__logo-link">
+            <img
+              src="./img/logo.svg"
+              width="242"
+              alt="Logo of Webpage"
+              class="header__logo"
+            />
+          </a>
 
+          <button class="header__btn" id="menu-toggle">
+            <img
+              src="./img/burger.svg"
+              width="47"
+              alt="Burger menu"
+              class="header__btn-img"
+            />
+          </button>
+
+          <div class="header__menu" id="menu">
+            <div class="header__menu-wrapper">
+              <h2 class="header__menu-title">
+                Студия <span class="header__dec">SEO-</span>маркетинга полного
+                цикла
+              </h2>
+
+              <div class="header__link-wrapper">
+                <a href="tel:+89251170046" class="header__link">
+                  <img
+                    src="./img/tel.svg"
+                    alt="mobile phone"
+                    class="header__link-img"
+                  />
+                  8 925 117 00 46
+                </a>
+
+                <a href="" class="header__link">
+                  <img
+                    src="./img/tel.svg"
+                    alt="telegram link"
+                    class="header__link-img"
+                  />
+                  Бесплатная консультация в Telegram
+                </a>
+              </div>
+            </div>
+
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#" class="header__item-link">Преимущества</a>
+              </li>
+
+              <li class="header__item">
+                <a href="#" class="header__item-link">Кейсы</a>
+              </li>
+
+              <li class="header__item">
+                <a href="#" class="header__item-link">Услуги</a>
+              </li>
+
+              <li class="header__item">
+                <a href="#" class="header__item-link">Контакты</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </header>
 
     <main class="main">
-        <section class="hero">
-            <div class="container">
-                <div class="hero__container">
+      <section class="hero">
+        <div class="container">
+          <div class="hero__container">
+            <div class="hero__p-wrapper">
+              <p class="hero__first">Деньги уходят в никуда?</p>
 
-                </div>
+              <p class="hero__second">SEO не работает?</p>
+
+              <p class="hero__third">В отчетах всё идеально, а лидов нет?</p>
             </div>
-        </section>
+
+            <h2 class="hero__title">
+              Поможем получить
+              <span class="hero__dec"
+                >в 2 раза<br />
+                больше лидов</span
+              >
+              без увеличения<br />
+              затрат на продвижение
+            </h2>
+
+            <div class="hero__btn-wrapper">
+              <div class="hero__left-wrapper">
+                <h3 class="hero__item-title">
+                  Заполните заявку на бесплатный аудит и получите:
+                </h3>
+
+                <p class="hero__item-body">
+                  - Разбор ошибок и «узких мест» в SEO-продвижении <br />-
+                  Пошаговый план действий для увеличения количества лидов
+                </p>
+              </div>
+
+              <button class="hero__btn">
+                Получить<br />
+                бесплатный аудит
+              </button>
+
+              <div class="hero__right-wrapper">
+                <h3 class="hero__item-title">
+                  Бонусы
+                  <img
+                    class="hero__item-icon"
+                    src="./img/star.svg"
+                    alt="star"
+                  />
+                </h3>
+
+                <p class="hero__item-body">
+                  - Скидка на 1 месяц продвижения 30% <br />- Управление
+                  репутацией в подарок
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stat">
+        <div class="container">
+          <div class="stat__container">
+            <ul class="stat__list">
+              <li class="stat__item">
+                <h4 class="stat__title">
+                  <span class="stat__dec">></span> 10 лет 
+                </h4>
+
+                <p class="stat__body">Средний опыт сотрудников</p>
+              </li>
+
+              <li class="stat__item">
+                <hr class="stat__line" />
+              </li>
+
+              <li class="stat__item">
+                <h4 class="stat__title">
+                  <span class="stat__dec">></span> 180 сайтов
+                </h4>
+
+                <p class="stat__body">В ТОП-10 поисковой выдачи</p>
+              </li>
+
+              <li class="stat__item">
+                <hr class="stat__line" />
+              </li>
+
+              <li class="stat__item">
+                <h4 class="stat__title">
+                  <span class="stat__dec">></span> 110 сайтов
+                </h4>
+
+                <p class="stat__body">В ТОП-3 поисковой выдачи</p>
+              </li>
+
+              <li class="stat__item">
+                <hr class="stat__line" />
+              </li>
+
+              <li class="stat__item">
+                <h4 class="stat__title">
+                  <span class="stat__dec">+</span> 135 % 
+                </h4>
+
+                <p class="stat__body">Увеличение трафика</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="mainPart">
+        <div class="container">
+          <div class="mainPart__container">
+            <h3 class="mainPart__title">
+              У наших клиентов<br />
+              <span class="mainPart__dec">SEO</span> работает!
+            </h3>
+
+            <ul class="mainPart__list">
+              <li class="mainPart__item">
+                <p class="mainPart__subheader">Кейс 1</p>
+
+                <div class="mainPart__first-wrapper">
+                  <div class="mainPart__name-wrapper">
+                    <h4 class="mainPart__name">
+                      Промонолит
+                      <a href="#"
+                        ><img
+                          width="24"
+                          src="./img/link.svg"
+                          alt="link icon"
+                          class="mainPart__name-icon"
+                      /></a>
+                    </h4>
+
+                    <p class="mainPart__name-body">
+                      За первые 2 месяца продвижения рост поискового трафика
+                      <span class="mainPart__name-dec">+42,2%</span>
+                    </p>
+                  </div>
+
+                  <ul class="mainPart__stat-list">
+                    <li class="mainPart__stat-item">
+                      <h5 class="mainPart__stat-item-title">
+                        <span class="mainPart__dec">X</span> 22.5
+                      </h5>
+
+                      <p class="mainPart__stat-item-body">
+                        Рост поискового<br />
+                        трафика
+                      </p>
+                    </li>
+
+                    <li class="mainPart__stat-item">
+                      <h5 class="mainPart__stat-item-title">
+                        <span class="mainPart__dec">+</span> 38 %
+                      </h5>
+
+                      <p class="mainPart__stat-item-body">
+                        Рост позиций в ТОП-10 выдачи
+                      </p>
+                    </li>
+
+                    <li class="mainPart__stat-item">
+                      <h5 class="mainPart__stat-item-title">
+                        <span class="mainPart__dec">+</span> 42,2%
+                      </h5>
+
+                      <p class="mainPart__stat-item-body">
+                        Рост поискового трафика в первые 2 мес
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="mainPart__wrapper">
+                  <div class="mainPart__top-wrapper">
+                    <div class="mainPart__left-wrapper">
+                      <div class="mainPart__body-wrapper">
+                        <p class="mainPart__body-light">Ниша клиента</p>
+
+                        <p class="mainPart__body-bold">Авиаперевозки грузов</p>
+                      </div>
+
+                      <div class="mainPart__body-wrapper">
+                        <p class="mainPart__body-light">Период продвижения</p>
+
+                        <p class="mainPart__body-bold">Январь 2022-2023</p>
+                      </div>
+
+                      <div class="mainPart__body-wrapper">
+                        <p class="mainPart__body-light">Регион продвижения</p>
+
+                        <p class="mainPart__body-bold">Москва</p>
+                      </div>
+                    </div>
+
+                    <div class="mainPart__right-wrapper">
+                      <div class="mainPart__body-wrapper">
+                        <p class="mainPart__body-light">Бюджет</p>
+
+                        <p class="mainPart__body-bold">40 000 руб.</p>
+                      </div>
+
+                      <div class="mainPart__body-wrapper">
+                        <p class="mainPart__body-light">Рост заявок</p>
+
+                        <p class="mainPart__body-bold">42 %</p>
+                      </div>
+
+                      <div class="mainPart__body-wrapper">
+                        <p class="mainPart__body-light">Рост продаж</p>
+
+                        <p class="mainPart__body-bold">58 %</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mainPart__bottom-wrapper">
+                    <div class="mainPart__bottom-left-wrapper">
+                      <ul class="mainPart__left-list">
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-title">Слово</p>
+                          <p class="mainPart__left-item-title-do">до</p>
+                          <p class="mainPart__left-item-title-cherez">
+                            Через 12 мес
+                          </p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">авиа груз</p>
+
+                          <p class="mainPart__left-item-do">8</p>
+
+                          <p class="mainPart__left-item-cherez">1</p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">
+                            авиа грузовые перевозки
+                          </p>
+
+                          <p class="mainPart__left-item-do">11</p>
+
+                          <p class="mainPart__left-item-cherez">1</p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">
+                            авиа грузоперевозка
+                          </p>
+
+                          <p class="mainPart__left-item-do">-</p>
+
+                          <p class="mainPart__left-item-cherez">1</p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">авиа грузы</p>
+
+                          <p class="mainPart__left-item-do">44</p>
+
+                          <p class="mainPart__left-item-cherez">1</p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">авиа доставка</p>
+
+                          <p class="mainPart__left-item-do">11</p>
+
+                          <p class="mainPart__left-item-cherez">1</p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">
+                            авиа доставка груза
+                          </p>
+
+                          <p class="mainPart__left-item-do">23</p>
+
+                          <p class="mainPart__left-item-cherez">1</p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">
+                            авиа курьерская доставка
+                          </p>
+
+                          <p class="mainPart__left-item-do">9</p>
+
+                          <p class="mainPart__left-item-cherez">2</p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">авиа логистика</p>
+
+                          <p class="mainPart__left-item-do">-</p>
+
+                          <p class="mainPart__left-item-cherez">-</p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">авиа отправка</p>
+
+                          <p class="mainPart__left-item-do">63</p>
+
+                          <p class="mainPart__left-item-cherez">2</p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">
+                            авиа отправка грузов
+                          </p>
+
+                          <p class="mainPart__left-item-do">28</p>
+
+                          <p class="mainPart__left-item-cherez">1</p>
+                        </li>
+                      </ul>
+
+                      <p class="mainPart__bottom-text">Рост позиций</p>
+                    </div>
+
+                    <div class="mainPart__bottom-right-wrapper">
+                      <p class="mainPart__bottom-text">Графики</p>
+
+                      <img
+                        src="./img/graph.png"
+                        alt="graphics of stats"
+                        class="mainPart__bottom-img1"
+                      />
+
+                      <img
+                        src="./img/stats.png"
+                        alt="graphics of stats"
+                        class="mainPart__bottom-img"
+                      />
+
+                      <p class="mainPart__bottom-text">Рост посещаемости</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="mainPart__item">
+                <p class="mainPart__subheader">Кейс 2</p>
+
+                <div class="mainPart__first-wrapper">
+                  <div class="mainPart__name-wrapper">
+                    <h4 class="mainPart__name">
+                      Завод Кранов
+                      <a href="#"
+                        ><img
+                          width="24"
+                          src="./img/link.svg"
+                          alt="link icon"
+                          class="mainPart__name-icon"
+                      /></a>
+                    </h4>
+
+                    <p class="mainPart__name-body">
+                      Вывод <span class="mainPart__name-dec">48% ключей</span> в
+                      топ-10 и увеличение трафика в 2 раза.
+                    </p>
+                  </div>
+
+                  <ul class="mainPart__stat-list">
+                    <li class="mainPart__stat-item">
+                      <h5 class="mainPart__stat-item-title">
+                        <span class="mainPart__dec">+</span> 45%
+                      </h5>
+
+                      <p class="mainPart__stat-item-body">Ключей в топ-10</p>
+                    </li>
+
+                    <li class="mainPart__stat-item">
+                      <h5 class="mainPart__stat-item-title">
+                        <span class="mainPart__dec">X</span> 2
+                      </h5>
+
+                      <p class="mainPart__stat-item-body">Рост трафика</p>
+                    </li>
+
+                    <li class="mainPart__stat-item">
+                      <h5 class="mainPart__stat-item-title">
+                        <span class="mainPart__dec">+</span> 40%
+                      </h5>
+
+                      <p class="mainPart__stat-item-body">
+                        Прирост видимости в Яндексе
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="mainPart__wrapper">
+                  <div class="mainPart__top-wrapper">
+                    <div class="mainPart__left-wrapper">
+                      <div class="mainPart__body-wrapper">
+                        <p class="mainPart__body-light">Ниша клиента</p>
+
+                        <p class="mainPart__body-bold">Авиаперевозки грузов</p>
+                      </div>
+
+                      <div class="mainPart__body-wrapper">
+                        <p class="mainPart__body-light">Период продвижения</p>
+
+                        <p class="mainPart__body-bold">Январь 2022-2023</p>
+                      </div>
+
+                      <div class="mainPart__body-wrapper">
+                        <p class="mainPart__body-light">Регион продвижения</p>
+
+                        <p class="mainPart__body-bold">Москва</p>
+                      </div>
+                    </div>
+
+                    <div class="mainPart__right-wrapper">
+                      <div class="mainPart__body-wrapper">
+                        <p class="mainPart__body-light">Бюджет</p>
+
+                        <p class="mainPart__body-bold">40 000 руб.</p>
+                      </div>
+
+                      <div class="mainPart__body-wrapper">
+                        <p class="mainPart__body-light">Рост заявок</p>
+
+                        <p class="mainPart__body-bold">42 %</p>
+                      </div>
+
+                      <div class="mainPart__body-wrapper">
+                        <p class="mainPart__body-light">Рост продаж</p>
+
+                        <p class="mainPart__body-bold">58 %</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mainPart__bottom-wrapper">
+                    <div class="mainPart__bottom-left-wrapper">
+                      <ul class="mainPart__left-list">
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-title">Слово</p>
+                          <p class="mainPart__left-item-title-do">до</p>
+                          <p class="mainPart__left-item-title-cherez">
+                            Через 12 мес
+                          </p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">авиа груз</p>
+
+                          <p class="mainPart__left-item-do">8</p>
+
+                          <p class="mainPart__left-item-cherez">1</p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">
+                            авиа грузовые перевозки
+                          </p>
+
+                          <p class="mainPart__left-item-do">11</p>
+
+                          <p class="mainPart__left-item-cherez">1</p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">
+                            авиа грузоперевозка
+                          </p>
+
+                          <p class="mainPart__left-item-do">-</p>
+
+                          <p class="mainPart__left-item-cherez">1</p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">авиа грузы</p>
+
+                          <p class="mainPart__left-item-do">44</p>
+
+                          <p class="mainPart__left-item-cherez">1</p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">авиа доставка</p>
+
+                          <p class="mainPart__left-item-do">11</p>
+
+                          <p class="mainPart__left-item-cherez">1</p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">
+                            авиа доставка груза
+                          </p>
+
+                          <p class="mainPart__left-item-do">23</p>
+
+                          <p class="mainPart__left-item-cherez">1</p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">
+                            авиа курьерская доставка
+                          </p>
+
+                          <p class="mainPart__left-item-do">9</p>
+
+                          <p class="mainPart__left-item-cherez">2</p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">авиа логистика</p>
+
+                          <p class="mainPart__left-item-do">-</p>
+
+                          <p class="mainPart__left-item-cherez">-</p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">авиа отправка</p>
+
+                          <p class="mainPart__left-item-do">63</p>
+
+                          <p class="mainPart__left-item-cherez">2</p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">
+                            авиа отправка грузов
+                          </p>
+
+                          <p class="mainPart__left-item-do">28</p>
+
+                          <p class="mainPart__left-item-cherez">1</p>
+                        </li>
+                      </ul>
+
+                      <p class="mainPart__bottom-text">Рост позиций</p>
+                    </div>
+
+                    <div class="mainPart__bottom-right-wrapper">
+                      <p class="mainPart__bottom-text">Графики</p>
+
+                      <img
+                        src="./img/graph.png"
+                        alt="graphics of stats"
+                        class="mainPart__bottom-img1"
+                      />
+
+                      <img
+                        src="./img/graph2.png"
+                        alt="graphics of stats"
+                        class="mainPart__bottom-img"
+                      />
+
+                      <p class="mainPart__bottom-text">Рост посещаемости</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="mainPart__item">
+                <p class="mainPart__subheader">Кейс 3</p>
+
+                <div class="mainPart__first-wrapper">
+                  <div class="mainPart__name-wrapper">
+                    <h4 class="mainPart__name">
+                      Эльбрус
+                      <a href="#"
+                        ><img
+                          width="24"
+                          src="./img/link.svg"
+                          alt="link icon"
+                          class="mainPart__name-icon"
+                      /></a>
+                    </h4>
+
+                    <p class="mainPart__name-body">
+                      Рост поискового трафика за 3 месяца на
+                      <span class="mainPart__name-dec">78%</span>
+                    </p>
+                  </div>
+
+                  <ul class="mainPart__stat-list">
+                    <li class="mainPart__stat-item">
+                      <h5 class="mainPart__stat-item-title">
+                        <span class="mainPart__dec">+</span> 1400
+                      </h5>
+
+                      <p class="mainPart__stat-item-body">
+                        Увеличение запросов в ТОП-10 за 5 месяцев
+                      </p>
+                    </li>
+
+                    <li class="mainPart__stat-item">
+                      <h5 class="mainPart__stat-item-title">
+                        <span class="mainPart__dec">+</span> 97 %
+                      </h5>
+
+                      <p class="mainPart__stat-item-body">
+                        Рост поискового трафика за 5 месяцев
+                      </p>
+                    </li>
+
+                    <li class="mainPart__stat-item">
+                      <h5 class="mainPart__stat-item-title">
+                        <span class="mainPart__dec">+</span> 20%
+                      </h5>
+
+                      <p class="mainPart__stat-item-body">
+                        Увеличение конверсии сайта за 3 месяца
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="mainPart__wrapper">
+                  <div class="mainPart__top-wrapper">
+                    <div class="mainPart__left-wrapper">
+                      <div class="mainPart__body-wrapper">
+                        <p class="mainPart__body-light">Ниша клиента</p>
+
+                        <p class="mainPart__body-bold">Авиаперевозки грузов</p>
+                      </div>
+
+                      <div class="mainPart__body-wrapper">
+                        <p class="mainPart__body-light">Период продвижения</p>
+
+                        <p class="mainPart__body-bold">Январь 2022-2023</p>
+                      </div>
+
+                      <div class="mainPart__body-wrapper">
+                        <p class="mainPart__body-light">Регион продвижения</p>
+
+                        <p class="mainPart__body-bold">Москва</p>
+                      </div>
+                    </div>
+
+                    <div class="mainPart__right-wrapper">
+                      <div class="mainPart__body-wrapper">
+                        <p class="mainPart__body-light">Бюджет</p>
+
+                        <p class="mainPart__body-bold">40 000 руб.</p>
+                      </div>
+
+                      <div class="mainPart__body-wrapper">
+                        <p class="mainPart__body-light">Рост заявок</p>
+
+                        <p class="mainPart__body-bold">42 %</p>
+                      </div>
+
+                      <div class="mainPart__body-wrapper">
+                        <p class="mainPart__body-light">Рост продаж</p>
+
+                        <p class="mainPart__body-bold">58 %</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mainPart__bottom-wrapper">
+                    <div class="mainPart__bottom-left-wrapper">
+                      <ul class="mainPart__left-list">
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-title">Слово</p>
+                          <p class="mainPart__left-item-title-do">до</p>
+                          <p class="mainPart__left-item-title-cherez">
+                            Через 12 мес
+                          </p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">авиа груз</p>
+
+                          <p class="mainPart__left-item-do">8</p>
+
+                          <p class="mainPart__left-item-cherez">1</p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">
+                            авиа грузовые перевозки
+                          </p>
+
+                          <p class="mainPart__left-item-do">11</p>
+
+                          <p class="mainPart__left-item-cherez">1</p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">
+                            авиа грузоперевозка
+                          </p>
+
+                          <p class="mainPart__left-item-do">-</p>
+
+                          <p class="mainPart__left-item-cherez">1</p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">авиа грузы</p>
+
+                          <p class="mainPart__left-item-do">44</p>
+
+                          <p class="mainPart__left-item-cherez">1</p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">авиа доставка</p>
+
+                          <p class="mainPart__left-item-do">11</p>
+
+                          <p class="mainPart__left-item-cherez">1</p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">
+                            авиа доставка груза
+                          </p>
+
+                          <p class="mainPart__left-item-do">23</p>
+
+                          <p class="mainPart__left-item-cherez">1</p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">
+                            авиа курьерская доставка
+                          </p>
+
+                          <p class="mainPart__left-item-do">9</p>
+
+                          <p class="mainPart__left-item-cherez">2</p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">авиа логистика</p>
+
+                          <p class="mainPart__left-item-do">-</p>
+
+                          <p class="mainPart__left-item-cherez">-</p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">авиа отправка</p>
+
+                          <p class="mainPart__left-item-do">63</p>
+
+                          <p class="mainPart__left-item-cherez">2</p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">
+                            авиа отправка грузов
+                          </p>
+
+                          <p class="mainPart__left-item-do">28</p>
+
+                          <p class="mainPart__left-item-cherez">1</p>
+                        </li>
+                      </ul>
+
+                      <p class="mainPart__bottom-text">Рост позиций</p>
+                    </div>
+
+                    <div class="mainPart__bottom-right-wrapper">
+                      <p class="mainPart__bottom-text">Графики</p>
+
+                      <img
+                        src="./img/graph3.png"
+                        alt="graphics of stats"
+                        class="mainPart__bottom-img1"
+                      />
+
+                      <img
+                        src="./img/graph4.png"
+                        alt="graphics of stats"
+                        class="mainPart__bottom-img"
+                      />
+
+                      <p class="mainPart__bottom-text">Рост посещаемости</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div class="mainPart__btnwrapper">
+              <button class="mainPart__btn">Больше кейсов</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="form" id="myForm">
+        <div class="container">
+          <div class="form__container">
+            <h3 class="form__header">Хотите так же?</h3>
+
+            <p class="form__bodyheader">
+              Ответьте на 4 вопроса, узнайте предварительную цену и
+              <span class="form__dec">заберите подарок</span>
+            </p>
+
+            <div class="form__step active" id="step1">
+              <label class="form__label">Выберите площадку продвижения:</label>
+
+              <p class="form__subheader">
+                Регион продвижения сильно влияет на цену SEO. Конкуренция (CR)
+                зависит от охвата пользователей.
+              </p>
+
+              <select name="platform" id="platform" class="form__select">
+                <option value="none" class="form__option" disabled selected>
+                  Bыберите один
+                </option>
+                <option class="form__option" value="yandex">
+                  Только Яндекс
+                </option>
+                <option class="form__option" value="yandex-google">
+                  Яндекс + Google
+                </option>
+              </select>
+
+              <div class="form__btn-wrapper">
+                <button
+                  type="button"
+                  class="form__btn-next"
+                  onclick="updateOptionsAndNext('step2')"
+                >
+                  Следующий шаг >
+                </button>
+              </div>
+            </div>
+
+            <div class="form__step" id="step2">
+              <label class="form__label">Ключевые запросы:</label>
+
+              <p class="form__subheader">
+                Количество продвигаемых фраз так же влияет на итоговую цену.
+              </p>
+
+              <select class="form__select" id="keywords"></select>
+
+              <div class="form__btn-wrapper">
+                <button
+                  type="button"
+                  class="back-button"
+                  onclick="prevStep('step1')"
+                >
+                  < Предыдущий Шаг
+                </button>
+
+                <button
+                  type="button"
+                  class="form__btn-next"
+                  onclick="nextStep('step3')"
+                >
+                  Следующий шаг >
+                </button>
+              </div>
+            </div>
+
+            <div class="form__step" id="step3">
+              <label class="form__label">Контент стратегия:</label>
+
+              <p class="form__subheader">
+                Каждая статья охватывает свою группу запросов и улучшает позиции
+                сайта. Чем больше статей публикуется, тем выше охват запросов в
+                месяц.
+              </p>
+
+              <select id="contentStrategy" class="form__select">
+                <option class="form__option" value="0">
+                  Не нужна контент стратегия
+                </option>
+                <option class="form__option" value="10000">
+                  До 10 статей - 15 000 символов в месяц
+                </option>
+                <option class="form__option" value="15000">
+                  До 20 статей - 30 000 символов в месяц
+                </option>
+                <option class="form__option" value="20000">
+                  До 30 статей - 45 000 символов в месяц
+                </option>
+              </select>
+
+              <div class="form__btn-wrapper">
+                <button
+                  type="button"
+                  class="back-button"
+                  onclick="prevStep('step2')"
+                >
+                  < Предыдущий Шаг
+                </button>
+                <button
+                  type="button"
+                  class="form__btn-next"
+                  onclick="nextStep('step4')"
+                >
+                  Следующий шаг >
+                </button>
+              </div>
+            </div>
+
+            <div class="form__step" id="step4">
+              <label class="form__label">Забери подарок и узнай цену</label>
+
+              <p class="form__subheader">Выбери один из 3-х подарков</p>
+
+              <select class="form__select" id="gift">
+                <option
+                  class="form__option"
+                  value="Месяц продвижения в подарок"
+                >
+                  Месяц продвижения в подарок
+                </option>
+                <option class="form__option" value="Работа над репутацией">
+                  Работа над репутацией
+                </option>
+                <option class="form__option" value="Маркетинговый аудит">
+                  Маркетинговый аудит
+                </option>
+              </select>
+
+              <div class="form__btn-wrapper">
+                <button
+                  type="button"
+                  class="back-button"
+                  onclick="prevStep('step3')"
+                >
+                  < Предыдущий Шаг
+                </button>
+                <button
+                  type="button"
+                  class="form__btn-next"
+                  onclick="nextStep('step5')"
+                >
+                  Следующий шаг >
+                </button>
+              </div>
+            </div>
+
+            <div class="form__step" id="step5">
+              <label class="form__label">Цена работ</label>
+
+              <p class="form__cost">
+                Ориентировочная стоимость работ:
+                <span class="form__cost-dec" id="cost"
+                  >от <span id="totalCost">50 000</span> руб.</span
+                >
+              </p>
+
+              <div class="form__subheader-wrapper">
+                <p class="form__subheader">
+                  Оставьте ваши контактные данные и мы свяжемся с вами.
+                </p>
+              </div>
+
+              <form class="form__form" onsubmit="submitForm(event)">
+                <div class="form__input-wrapper">
+                  <input
+                    type="tel"
+                    class="form__input"
+                    id="tel"
+                    placeholder="+7 (___) ___-__-__*"
+                    required
+                    oninput="formatPhoneNumber(this)"
+                    maxlength="17"
+                  />
+
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    required
+                    placeholder="Ваше имя"
+                    class="form__input"
+                  />
+
+                  <input
+                    type="text"
+                    name="web"
+                    id="web"
+                    required
+                    placeholder="Адрес сайта"
+                    class="form__input"
+                  />
+                </div>
+
+                <div class="form__submit-btn-wrapper">
+                  <button
+                    type="button"
+                    class="back-button"
+                    onclick="prevStep('step4')"
+                  >
+                    < Предыдущий Шаг
+                  </button>
+
+                  <button class="form__submit">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="result">
+        <div class="container">
+          <div class="result__container">
+            <div class="result__left">
+              <h3 class="result__title">
+                <span class="result__dec">Достигаем</span> успешных результатов
+              </h3>
+
+              <p class="result__subheader">
+                Благодаря команде узконаправленных специалистов и четкому плану
+                работ
+              </p>
+
+              <button class="result__btn">Получить бесплатный аудит</button>
+            </div>
+
+            <ul class="result__list">
+              <li class="result__item">
+                <h4 class="result__item-subtitle">
+                  <span class="result__item-dec">—</span> Опыт 15 лет
+                </h4>
+
+                <p class="result__item-body">
+                  Работа более чем с 89 нишами, большая насмотренность помогает
+                  сразу выбирать верную тактику продвижения, которая приведет
+                  быстрее всего к результату.
+                </p>
+              </li>
+
+              <li class="result__item">
+                <h4 class="result__item-subtitle">
+                  <span class="result__item-dec">—</span> Работа на результат
+                </h4>
+
+                <p class="result__item-body">
+                  Мотивация сотрудников компании зависит от результатов работы,
+                  поэтому каждый участник команды заинтересован в выполнении
+                  плана.
+                </p>
+              </li>
+
+              <li class="result__item">
+                <h4 class="result__item-subtitle">
+                  <span class="result__item-dec">—</span> Узконаправленные
+                  специалисты
+                </h4>
+
+                <p class="result__item-body">
+                  Никаких универсалов и людей-оркестров. Каждый член команды
+                  эксперт в своей области.
+                </p>
+              </li>
+
+              <li class="result__item">
+                <h4 class="result__item-subtitle">
+                  <span class="result__item-dec">—</span> Собственная
+                  инфраструктура
+                </h4>
+
+                <p class="result__item-body">
+                  Удобная система управления проектами для контроля сроков и
+                  своевременного выполнения задач. Используем современные
+                  инструменты: нейросети и искусственный интеллект.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <div class="contact__container">
+            <h3 class="contact__title">
+              <span class="contact__dec">Пора достигать результатов,</span> а не
+              сливать деньги. Ждем на бесплатном аудите!
+            </h3>
+
+            <form class="contact__form">
+              <div class="contact__input-wrapper">
+                <input
+                  type="tel"
+                  class="contact__input"
+                  id="tel"
+                  placeholder="+7 (___) ___-__-__*"
+                  required
+                  oninput="formatPhoneNumber(this)"
+                  maxlength="17"
+                />
+
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                  placeholder="Ваше имя"
+                  class="contact__input"
+                />
+
+                <input
+                  type="text"
+                  name="web"
+                  id="web"
+                  required
+                  placeholder="Адрес сайта"
+                  class="contact__input"
+                />
+              </div>
+
+              <div class="contact__btn-wrapper">
+                <button class="contact__button">
+                  Получить<br />
+                  бесплатный аудит
+                </button>
+              </div>
+            </form>
+
+            <p class="contact__body">
+              Нажимая на кнопку, вы даете согласие на обработку<br />
+              ваших персональных данных
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="container">
-            
+      <div class="container">
+        <div class="footer__container">
+          <a href="#" class="footer__logo-link">
+            <img
+              src="./img/footer-logo.svg"
+              alt="footer"
+              class="footer__logo"
+            />
+          </a>
+
+          <a href="#" class="footer__wrapper">
+            <p class="footer__body">Бесплатная консультация<br> в Telegram</p>
+
+            <img
+              src="./img/telegram.svg"
+              alt="telegram img"
+              class="footer__telegram"
+            />
+          </a>
         </div>
+      </div>
+
+      <hr class="footer__line" />
+
+      <div class="container">
+        <div class="footer__container1">
+          <div class="footer__invisible"></div>
+
+          <p class="footer__bottom-body">©2024 «Сеотика». Все права защищены</p>
+
+          <a href="#" class="footer__bottom-link">
+            <img
+              src="./img/arrow-footer.png"
+              alt="arrow footer"
+              class="footer__img-bottom"
+            />
+          </a>
+        </div>
+      </div>
     </footer>
-</body>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/form.js"></script>
+  </body>
 </html>

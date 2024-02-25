@@ -1,0 +1,54 @@
+.stat {
+    margin-top: 190px;
+  &__body {
+    font-family: 'light';
+    font-size: 15px;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    &::after {
+        position: absolute;
+        content: "";
+        display: inline-block;
+        width: 1250px;
+        height: 250px;
+        top: calc(0% - 90px);
+        background-image: url('../../img/Vector.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        z-index: -1;
+    }
+  }
+
+  &__line {
+    height: 60px;
+    width: 1px;
+    border: none;
+    outline: none;
+    background: #E0E0E1;
+  }
+
+  &__dec {
+    color: #FF7439;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+   
+  }
+  &__title {
+    font-family: 'dela';
+    font-size: 32px;
+  }
+}
