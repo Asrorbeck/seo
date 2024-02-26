@@ -104,6 +104,9 @@
     background-color: #fafafa;
     font-family: "book";
     font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
   &__left-item-title {
     max-width: 252px;
@@ -293,11 +296,11 @@
     }
 
     &__stat-item-body {
-      font-size: 10px;
+      font-size: 8px;
     }
 
     &__stat-list {
-      gap: 10px;
+      gap: 5px;
     }
 
     &__name-icon {

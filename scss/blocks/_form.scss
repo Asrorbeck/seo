@@ -237,3 +237,13 @@
     }
   }
 }
+
+@media screen and (max-width: 330px) {
+  .form {
+    &__dec {
+      &::before {
+        left: calc(0% - 25px);
+      }
+    }
+  }
+}

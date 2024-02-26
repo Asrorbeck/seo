@@ -8,7 +8,7 @@
     <title>Seotica</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="container">
         <div class="header__container">
           <a href="#" class="header__logo-link">
@@ -20,7 +20,7 @@
             />
           </a>
 
-          <button class="header__btn" id="menu-toggle">
+          <button class="header__btn" id="openBtn" onclick="toggleMenu()">
             <img
               src="./img/burger.svg"
               width="47"
@@ -29,52 +29,9 @@
             />
           </button>
 
-          <div class="header__menu" id="menu">
-            <div class="header__menu-wrapper">
-              <h2 class="header__menu-title">
-                Студия <span class="header__dec">SEO-</span>маркетинга полного
-                цикла
-              </h2>
-
-              <div class="header__link-wrapper">
-                <a href="tel:+89251170046" class="header__link">
-                  <img
-                    src="./img/tel.svg"
-                    alt="mobile phone"
-                    class="header__link-img"
-                  />
-                  8 925 117 00 46
-                </a>
-
-                <a href="" class="header__link">
-                  <img
-                    src="./img/tel.svg"
-                    alt="telegram link"
-                    class="header__link-img"
-                  />
-                  Бесплатная консультация в Telegram
-                </a>
-              </div>
-            </div>
-
-            <ul class="header__list">
-              <li class="header__item">
-                <a href="#" class="header__item-link">Преимущества</a>
-              </li>
-
-              <li class="header__item">
-                <a href="#" class="header__item-link">Кейсы</a>
-              </li>
-
-              <li class="header__item">
-                <a href="#" class="header__item-link">Услуги</a>
-              </li>
-
-              <li class="header__item">
-                <a href="#" class="header__item-link">Контакты</a>
-              </li>
-            </ul>
-          </div>
+          <button class="menu__btn" id="closeBtn" onclick="toggleMenu()">
+            <img src="./img/close.svg" class="closeBtn" width="47" alt="close" />
+          </button>
         </div>
       </div>
     </header>
@@ -1336,6 +1293,88 @@
         <button id="closeSuccessModalBtn" class="modal__btn">
           Хорошо, закрыть
         </button>
+      </div>
+    </div>
+
+    <div class="menu" id="menu">
+      <div class="menu__container">
+        <div class="menu__left-wrapper">
+          <h4 class="menu__header">
+            Студия <span class="menu__dec">SEO-</span>маркетинга полного цикла
+          </h4>
+
+          <div class="menu__wrapper">
+            <a href="tel: +89251170046" class="menu__link"
+              ><img src="./img/tel.svg" alt="telefon" /> 8 925 117 00 46</a
+            >
+
+            <a href="#" class="menu__link"
+              ><img src="./img/tg.svg" alt="telegram" /> Бесплатная консультация
+              в Telegram</a
+            >
+          </div>
+        </div>
+
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__item-link">Преимущества</a>
+          </li>
+
+          <li class="menu__item">
+            <a href="#" class="menu__item-link">Кейсы</a>
+          </li>
+
+          <li class="menu__item">
+            <a href="#" class="menu__item-link">Калькулятор</a>
+          </li>
+
+          <li class="menu__item">
+            <a href="#" class="menu__item-link">Услуги</a>
+          </li>
+
+          <li class="menu__item">
+            <a href="#" class="menu__item-link">Контакты</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="menu__m-container">
+        <h4 class="menu__header">
+          Студия <span class="menu__dec">SEO- <br></span>маркетинга полного цикла
+        </h4>
+
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__item-link">Преимущества</a>
+          </li>
+
+          <li class="menu__item">
+            <a href="#" class="menu__item-link">Кейсы</a>
+          </li>
+
+          <li class="menu__item">
+            <a href="#" class="menu__item-link">Калькулятор</a>
+          </li>
+
+          <li class="menu__item">
+            <a href="#" class="menu__item-link">Услуги</a>
+          </li>
+
+          <li class="menu__item">
+            <a href="#" class="menu__item-link">Контакты</a>
+          </li>
+        </ul>
+
+        <div class="menu__wrapper">
+          <a href="tel: +89251170046" class="menu__link"
+            ><img class="menu__img" src="./img/tel.svg" alt="telefon" /> 8 925 117 00 46</a
+          >
+
+          <a href="#" class="menu__link"
+            ><img class="menu__img" src="./img/tg.svg" alt="telegram" /> Бесплатная консультация в
+            Telegram</a
+          >
+        </div>
       </div>
     </div>
 

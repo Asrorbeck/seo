@@ -1,11 +1,14 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const menuToggle = document.getElementById("menu-toggle");
-  const menu = document.getElementById("menu");
+function toggleMenu() {
+  var menu = document.getElementById('menu');
+  var header = document.getElementById('header');
+  var burgerBtn = document.getElementById('openBtn');
+  var closeBtn = document.getElementById('closeBtn');
 
-  menuToggle.addEventListener("click", function () {
-    menu.classList.toggle("open");
-  });
-});
+  menu.classList.toggle('menu-open');
+  header.classList.toggle('header__bg');
+  burgerBtn.classList.toggle('show');
+  closeBtn.classList.toggle('show');
+}
 
 document.addEventListener("DOMContentLoaded", function () {
   // Get the modals and buttons

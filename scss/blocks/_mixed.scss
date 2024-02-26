@@ -1,0 +1,18 @@
+.menu {
+    position: absolute; /* Change to absolute position */
+    top: 60px;
+    left: 0%;
+    width: 100%;
+    color: #fff;
+    box-sizing: border-box;
+    z-index: 900;
+    padding: 10px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(-190%);
+    transition: transform 0.3s ease-in-out; /* Added transition */
+  }
+
+  /* Added class for menu open state */
+  .menu-open {
+    transform: translateY(10px);
+  }

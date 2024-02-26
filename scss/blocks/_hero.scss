@@ -146,7 +146,7 @@
     &__second {
       font-family: "stolzl-regular";
       font-size: 12px;
-      padding: 15px;
+      padding: 10px;
     }
 
     &__p-wrapper {
@@ -155,8 +155,8 @@
 
     &__flex-wrapper {
       display: flex;
+      align-items: flex-start;
       margin-bottom: 20px;
-      gap: 10px;
     }
 
     &__p-mobile-wrapper {
@@ -165,6 +165,9 @@
 
     &__first {
       transform: rotate(-4.39deg);
+      text-wrap: nowrap;
+      white-space: nowrap;
+      overflow: hidden;
     }
 
     &__second {
@@ -173,7 +176,7 @@
     &__third {
       transform: rotate(8.11deg);
       max-width: 250px;
-      margin-left: 50px;
+      margin-left: 30px;
       width: 100%;
     }
 
@@ -204,6 +207,46 @@
 
     &__left-wrapper {
       display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .hero {
+    &__third{
+      margin-left: 30px;
+    }
+
+    &__first, &__second, &__third {
+      padding: 10px;
+    }
+
+    &__third {
+      margin-top: 70px;
+    }
+
+    &__first {
+      max-width: 160px;
+      width: 100%;
+    }
+
+    &__flex-wrapper {
+      position: absolute;
+      gap: 0;
+      align-items: flex-start;
+    }
+
+    &__second {
+      max-width: 115px;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .hero {
+    &__third{
+      margin-left: 0px;
     }
   }
 }
