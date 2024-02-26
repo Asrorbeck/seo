@@ -234,6 +234,15 @@ html {
   top: 120px;
 }
 
+@media screen and (max-width: 575px) {
+  .header__btn-img {
+    width: 26px;
+  }
+  .header__logo {
+    max-width: 163px;
+    width: 100%;
+  }
+}
 .hero {
   background-image: url("../../img/hero.png");
   background-repeat: no-repeat;
@@ -360,7 +369,47 @@ html {
   right: calc(0% + 90px);
   bottom: calc(0% - 75px);
 }
+.hero__p-mobile-wrapper {
+  display: none;
+}
 
+@media screen and (max-width: 575px) {
+  .hero {
+    padding-top: 120px;
+  }
+  .hero__first, .hero__third, .hero__second {
+    font-family: "stolzl-regular";
+    font-size: 12px;
+    padding: 15px;
+  }
+  .hero__p-wrapper {
+    display: none;
+  }
+  .hero__flex-wrapper {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+  .hero__p-mobile-wrapper {
+    display: block;
+  }
+  .hero__first {
+    transform: rotate(-4.39deg);
+  }
+  .hero__second {
+    transform: rotate(-30deg);
+  }
+  .hero__third {
+    transform: rotate(8.11deg);
+    max-width: 250px;
+    margin-left: 50px;
+    width: 100%;
+  }
+  .hero__title {
+    font-size: 24px;
+    text-align: start;
+  }
+}
 .stat {
   margin-top: 190px;
 }
@@ -631,6 +680,11 @@ html {
   transition: all 0.3s ease;
 }
 
+@media screen and (max-width: 575px) {
+  .mainPart__bottom-wrapper {
+    overflow: auto;
+  }
+}
 .form {
   margin-top: 150px;
 }

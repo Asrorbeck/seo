@@ -52,3 +52,17 @@
   display: block;
   top: 120px;
 }
+
+
+@media screen and (max-width: 575px) {
+  .header {
+    &__btn-img {
+      width: 26px;
+    }
+
+    &__logo {
+      max-width: 163px;
+      width: 100%;
+    }
+  }
+}

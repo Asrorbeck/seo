@@ -224,4 +224,17 @@
     border-radius: 20px;
     transition: all 0.3s ease;
   }
+
+  
+}
+
+
+@media screen and (max-width: 575px) {
+  .mainPart {
+    &__bottom-wrapper {
+      overflow: auto;
+    }
+
+    
+  }
 }
