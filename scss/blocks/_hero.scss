@@ -1,12 +1,12 @@
 .hero {
-  background-image: url('../../img/hero.png');
+  background-image: url("../../img/hero.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   padding-top: 150px;
   padding-bottom: 170px;
   &__btn {
-    font-family: 'medium';
+    font-family: "medium";
     font-size: 22px;
     padding: 38px 43px;
     background-color: #000;
@@ -22,7 +22,7 @@
       height: 84px;
       top: calc(0% - 50px);
       left: calc(0% - 15px);
-      background-image: url('../../img/crown.svg');
+      background-image: url("../../img/crown.svg");
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
@@ -43,26 +43,28 @@
   &__dec {
     color: #fff;
   }
-  &__first, &__third, &__second {
+  &__first,
+  &__third,
+  &__second {
     padding: 26px;
     background-color: #fff;
     border-radius: 50px;
-    color: #F16326;
-    font-family: 'stolzl-regular';
+    color: #f16326;
+    font-family: "stolzl-regular";
     font-size: 20px;
   }
   &__first {
     transform: rotate(-5.16deg);
   }
   &__item-body {
-    font-family: 'light';
+    font-family: "light";
     font-size: 14px;
     line-height: 18px;
   }
   &__item-icon {
   }
   &__item-title {
-    font-family: 'medium';
+    font-family: "medium";
     font-size: 18px;
     margin-bottom: 12px;
   }
@@ -101,7 +103,7 @@
     transform: rotate(8.11deg);
   }
   &__title {
-    font-family: 'dela';
+    font-family: "dela";
     font-size: 42px;
     margin-top: 45px;
     max-width: 950px;
@@ -116,7 +118,7 @@
       content: "";
       width: 146px;
       height: 85px;
-      background-image: url('../../img/arrow.svg');
+      background-image: url("../../img/arrow.svg");
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
@@ -131,17 +133,23 @@
   }
 }
 
-
 @media screen and (max-width: 575px) {
   .hero {
     padding-top: 120px;
-    &__first, &__third, &__second {
-      font-family: 'stolzl-regular';
+    padding-bottom: 120px;
+    background-image: url("../../img/mobile-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &__first,
+    &__third,
+    &__second {
+      font-family: "stolzl-regular";
       font-size: 12px;
       padding: 15px;
     }
 
-    &__p-wrapper{
+    &__p-wrapper {
       display: none;
     }
 
@@ -155,7 +163,7 @@
       display: block;
     }
 
-    &__first { 
+    &__first {
       transform: rotate(-4.39deg);
     }
 
@@ -172,6 +180,30 @@
     &__title {
       font-size: 24px;
       text-align: start;
+      margin-bottom: 40px;
+      margin-top: 15px;
+      &::after {
+        display: none;
+      }
+    }
+
+    &__btn {
+      font-size: 18px;
+      padding: 20px 20px;
+      &::after {
+        width: 33px;
+        height: 33px;
+        top: calc(0% - 17px);
+        left: 0;
+      }
+    }
+
+    &__right-wrapper {
+      display: none;
+    }
+
+    &__left-wrapper {
+      display: none;
     }
   }
 }

@@ -172,3 +172,68 @@
 .step-sign {
   margin-right: 10px;
 }
+
+@media screen and (max-width: 575px) {
+  .form {
+    margin-top: 70px;
+    &__header {
+      font-size: 26px;
+      margin-top: 14px;
+    }
+
+    &__bodyheader {
+      font-size: 18px;
+      text-align: center;
+    }
+
+    &__dec {
+      display: block;
+      margin-top: 20px;
+      &::before {
+        left: calc(0% + 40px);
+      }
+    }
+
+    &__select {
+      padding: 18px;
+      font-size: 14px;
+    }
+
+    &__btn-next {
+      width: 100%;
+      font-size: 14px;
+      padding: 18px;
+      border-radius: 10px;
+      order: 1;
+    }
+
+    &__btn-wrapper {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0;
+    }
+
+    &__input-wrapper {
+      flex-direction: column;
+    }
+  }
+
+  .back-button {
+    width: 100%;
+    font-size: 14px;
+    padding: 18px;
+    border-radius: 10px;
+    order: 2;
+  }
+}
+
+
+@media screen and (max-width: 365px) {
+  .form {
+    &__dec {
+      &::before {
+        left: 0;
+      }
+    }
+  }
+}

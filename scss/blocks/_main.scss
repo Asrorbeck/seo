@@ -76,7 +76,8 @@
   &__left-item {
     display: flex;
     align-items: center;
-    border: 1px solid #fff;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
   }
   &__left-item-cherez {
     background-color: #aae77b40;
@@ -230,11 +231,138 @@
 
 
 @media screen and (max-width: 575px) {
+
   .mainPart {
+    margin-top: 80px;
+
+    &__top-wrapper {
+      border: 1px solid #ddd;;
+    }
     &__bottom-wrapper {
-      overflow: auto;
+      max-width: 575px;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      white-space: nowrap;
+      padding: 0;
+      padding-top: 30px;
+      width: 100%;
     }
 
-    
+    &__bottom-left-wrapper, &__bottom-right-wrapper {
+      flex: 0 0 100%;
+      scroll-snap-align: start;
+    }
+
+    &__bottom-text {
+      padding-bottom: 20px;
+      font-size: 10px;
+    }
+
+    &__title {
+      font-size: 22px;
+      margin-bottom: 32px;
+      &::after {
+        width: 35px;
+        height: 77px;
+        top: calc(0% - 70px);
+        left: calc( 50% + 90px);
+      }
+    }
+
+    &__subheader {
+      font-size: 12px;
+    }
+
+    &__name {
+      font-size: 22px;
+    }
+
+    &__name-body {
+      font-size: 14px;
+      margin-bottom: 28px;
+    }
+
+    &__first-wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__stat-item-title {
+      font-size: 22px;
+      margin-bottom: 4px;
+    }
+
+    &__stat-item-body {
+      font-size: 10px;
+    }
+
+    &__stat-list {
+      gap: 10px;
+    }
+
+    &__name-icon {
+      width: 15px;
+      height: 15px;
+    }
+
+    &__top-wrapper {
+      flex-direction: column;
+      padding: 20px 16px;
+    }
+
+    &__name-wrapper {
+      align-items: start;
+    }
+
+    &__body-light{
+      font-family: 'light';
+      font-size: 12px;
+    }
+
+    &__body-bold {
+      font-family: 'book';
+      font-size: 12px;
+    }
+
+    &__left-wrapper {
+      max-width: none;
+      padding: 20px;
+      max-width: 325px;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    &__right-wrapper {
+      padding: 0;
+    }
+
+    &__left-item-title, &__left-item-name {
+      max-width: 164px;
+      font-size: 9px;
+    }
+
+    &__left-item-name {
+      padding: 7px 0 7px 7px;
+    }
+
+    &__left-item-cherez, &__left-item-do {
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+
+    &__left-item-do, &__left-item-cherez, &__left-item-title-do, &__left-item-title-cherez {
+      font-size: 9px;
+      max-width: 85px;
+    }
+
+    &__left-list {
+      max-width: 400px;
+    }
+
+    &__left-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }

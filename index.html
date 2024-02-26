@@ -922,7 +922,7 @@
                   class="form__btn-next"
                   onclick="updateOptionsAndNext('step2')"
                 >
-                  Следующий шаг >
+                  Следующий шаг <span class="arrow">></span>
                 </button>
               </div>
             </div>
@@ -942,7 +942,7 @@
                   class="back-button"
                   onclick="prevStep('step1')"
                 >
-                  < Предыдущий Шаг
+                  <span class="arrow"><</span> Предыдущий Шаг
                 </button>
 
                 <button
@@ -950,7 +950,7 @@
                   class="form__btn-next"
                   onclick="nextStep('step3')"
                 >
-                  Следующий шаг >
+                  Следующий шаг <span class="arrow">></span>
                 </button>
               </div>
             </div>
@@ -985,14 +985,14 @@
                   class="back-button"
                   onclick="prevStep('step2')"
                 >
-                  < Предыдущий Шаг
+                  <span class="arrow"><</span> Предыдущий Шаг
                 </button>
                 <button
                   type="button"
                   class="form__btn-next"
                   onclick="nextStep('step4')"
                 >
-                  Следующий шаг >
+                  Следующий шаг <span class="arrow">></span>
                 </button>
               </div>
             </div>
@@ -1023,14 +1023,14 @@
                   class="back-button"
                   onclick="prevStep('step3')"
                 >
-                  < Предыдущий Шаг
+                  <span class="arrow"><</span> Предыдущий Шаг
                 </button>
                 <button
                   type="button"
                   class="form__btn-next"
                   onclick="nextStep('step5')"
                 >
-                  Следующий шаг >
+                  Следующий шаг <span class="arrow">></span>
                 </button>
               </div>
             </div>
@@ -1088,7 +1088,7 @@
                     class="back-button"
                     onclick="prevStep('step4')"
                   >
-                    < Предыдущий Шаг
+                    <span class="arrow"><</span> Предыдущий Шаг
                   </button>
 
                   <button class="form__submit">Отправить</button>
@@ -1112,7 +1112,9 @@
                 работ
               </p>
 
-              <button class="result__btn">Получить бесплатный аудит</button>
+              <div class="result__btn-wrapper">
+                <button class="result__btn">Получить бесплатный аудит</button>
+              </div>
             </div>
 
             <ul class="result__list">
@@ -1173,7 +1175,7 @@
         <div class="container">
           <div class="contact__container">
             <h3 class="contact__title">
-              <span class="contact__dec">Пора достигать результатов,</span> а не
+              <span class="contact__dec">Пора достигать результатов,<br></span> а не
               сливать деньги. Ждем на бесплатном аудите!
             </h3>
 

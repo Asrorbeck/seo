@@ -42,3 +42,34 @@
     gap: 16px;
   }
 }
+
+
+@media screen and (max-width: 575px) {
+  .footer {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__logo {
+      margin-bottom: 25px;
+    }
+    
+    &__body {
+      order: 2;
+      text-align: start;
+    }
+
+    &__telegram {
+      order: 1;
+    }
+
+    &__container1 {
+      flex-direction: column;
+    }
+
+    &__bottom-body {
+      order: 2;
+      margin-top: 17px;
+    }
+  }
+}

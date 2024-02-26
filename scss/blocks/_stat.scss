@@ -52,3 +52,32 @@
     font-size: 32px;
   }
 }
+
+
+@media screen and (max-width: 575px) {
+  .stat {
+    margin-top: 56px;
+    &__list {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &__line {
+      display: none;
+    }
+
+    &__container {
+      &::after {
+        display: none;
+      }
+    }
+
+    &__title {
+      font-size: 18px;
+    }
+
+    &__body {
+      font-size: 14px;
+    }
+  }
+}
