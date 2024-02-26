@@ -1251,6 +1251,9 @@ html {
 }
 
 @media screen and (max-width: 575px) {
+  .contact {
+    background-image: url("../../img/contact-bg.png");
+  }
   .contact__title {
     font-size: 22px;
     margin-top: 40px;
@@ -1316,12 +1319,6 @@ html {
   display: flex;
   align-items: center;
   gap: 16px;
-}
-
-@media screen and (max-width: 575px) {
-  .modal__input {
-    width: 250px;
-  }
 }
 
 @media screen and (max-width: 575px) {
