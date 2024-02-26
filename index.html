@@ -113,7 +113,7 @@
                 </p>
               </div>
 
-              <button class="hero__btn">
+              <button id="openModalBtn" class="hero__btn">
                 Получить<br />
                 бесплатный аудит
               </button>
@@ -1041,7 +1041,7 @@
                 </p>
               </div>
 
-              <form class="form__form" onsubmit="submitForm(event)">
+              <form class="form__form" onsubmit="processForm(event)">
                 <div class="form__input-wrapper">
                   <input
                     type="tel"
@@ -1167,12 +1167,12 @@
               сливать деньги. Ждем на бесплатном аудите!
             </h3>
 
-            <form class="contact__form">
+            <form id="forma" class="contact__form" onsubmit="return sendTelegram()">
               <div class="contact__input-wrapper">
                 <input
                   type="tel"
                   class="contact__input"
-                  id="tel"
+                  id="tel2"
                   placeholder="+7 (___) ___-__-__*"
                   required
                   oninput="formatPhoneNumber(this)"
@@ -1182,7 +1182,7 @@
                 <input
                   type="text"
                   name="name"
-                  id="name"
+                  id="name2"
                   required
                   placeholder="Ваше имя"
                   class="contact__input"
@@ -1191,7 +1191,7 @@
                 <input
                   type="text"
                   name="web"
-                  id="web"
+                  id="web2"
                   required
                   placeholder="Адрес сайта"
                   class="contact__input"
@@ -1227,7 +1227,10 @@
           </a>
 
           <a href="#" class="footer__wrapper">
-            <p class="footer__body">Бесплатная консультация<br> в Telegram</p>
+            <p class="footer__body">
+              Бесплатная консультация<br />
+              в Telegram
+            </p>
 
             <img
               src="./img/telegram.svg"
@@ -1256,6 +1259,67 @@
         </div>
       </div>
     </footer>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModalBtn">&times;</span>
+        <h2 class="modal__title">Перезвонить мне</h2>
+        <form class="modal__form" id="formModal">
+          <input
+            type="tel"
+            class="modal__input"
+            id="tel1"
+            placeholder="+7 (___) ___-__-__*"
+            required
+            oninput="formatPhoneNumber(this)"
+            maxlength="17"
+          />
+
+          <input
+            type="text"
+            name="name"
+            id="name1"
+            required
+            placeholder="Ваше имя"
+            class="modal__input"
+          />
+
+          <input
+            type="text"
+            name="web"
+            id="web1"
+            required
+            placeholder="Адрес сайта"
+            class="modal__input"
+          />
+
+          <button class="modal__btn">Отправить</button>
+
+          <p class="modal__body">
+            Нажимая на кнопку, вы даете согласие на обработку ваших персональных
+            данных
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <div id="successModal" class="thank">
+      <div class="thank-content">
+        <div class="thank-wrapper">
+          <div class="invisible"></div>
+          <h2 class="thank__title">Спасибо!</h2>
+          <span class="close" id="closeModalBtn">&times;</span>
+        </div>
+        <p class="thank__body">
+          Заявка успешно отправлена. Скоро наш менеджер свяжется с вами.
+          Спасибо, что выбрали нашу компанию!
+        </p>
+
+        <button id="closeSuccessModalBtn" class="modal__btn">
+          Хорошо, закрыть
+        </button>
+      </div>
+    </div>
 
     <script src="./js/index.js"></script>
     <script src="./js/form.js"></script>
