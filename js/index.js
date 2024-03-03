@@ -61,7 +61,7 @@ function sendTelegram() {
 
   var botToken = "1394358441:AAHP6VJrxu7yc1z3e4GYLiSRwXVeg_DOswk";
 
-  var chatIds = ["-1001260248230", "905770018", "895126630"];
+  var chatIds = ["-1001260248230"];
 
   var message = `Телефон: ${tel}
 Имя: ${name}
@@ -105,7 +105,7 @@ function sendTelegram2() {
 
   var botToken = "1394358441:AAHP6VJrxu7yc1z3e4GYLiSRwXVeg_DOswk";
 
-  var chatIds = ["-1001260248230", "905770018", "895126630"];
+  var chatIds = ["-1001260248230"];
 
   var message = `Телефон: ${tel}
 Имя: ${name}

@@ -179,7 +179,7 @@ function sendTelegram3() {
 
   var botToken = "1394358441:AAHP6VJrxu7yc1z3e4GYLiSRwXVeg_DOswk";
 
-  var chatIds = ["-1001260248230", "905770018", "895126630"];
+  var chatIds = ["-1001260248230"];
 
   var message = `name: ${name}
 Телефон: ${telephone}
