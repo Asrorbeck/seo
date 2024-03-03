@@ -1,12 +1,13 @@
 let currentStep = 1;
 
 function updateOptionsAndNext(stepId) {
+  console.log(stepId, "index");
   const currentStepSelect = document.getElementById("platform");
   if (currentStepSelect.value === "none") {
     alert("Please make a selection before proceeding.");
     return;
   }
-
+  updateActiveStep(1);
   updateOptions();
   nextStep(stepId);
 }
@@ -20,14 +21,16 @@ function formatPhoneNumber(input) {
   }
 
   // Add the initial part of the phone number
-  let formattedValue = "+7 (" + value.substring(0, 3) + ")";
+  let formattedValue = "+7 " + value.substring(0, 3);
 
   // Use regex to format the remaining part of the phone number
   formattedValue += value
     .substring(3)
-    .replace(/(\d{3})(\d{2})(\d{1,2})/, "$1-$2-$3");
+    .replace(/(\d{3})(\d{2})(\d{1,2})/, " $1-$2-$3");
 
   input.value = formattedValue;
+
+  console.log(formattedValue);
 }
 
 function updateOptions() {
@@ -55,9 +58,35 @@ function addOption(select, text, value) {
 }
 
 function nextStep(stepId) {
+  const steps = document.querySelectorAll(".step");
+  console.log(stepId, "stesp");
+  if (stepId == "step2") {
+    const steps = document.querySelectorAll(".step")[0];
+    steps.classList.add("completed");
+  }
+  if (stepId == "step3") {
+    const steps = document.querySelectorAll(".step")[1];
+    steps.classList.add("completed");
+  }
+  if (stepId == "step4") {
+    const steps = document.querySelectorAll(".step")[2];
+    steps.classList.add("completed");
+  }
+  if (stepId == "step5") {
+    const steps = document.querySelectorAll(".step")[3];
+    steps.classList.add("completed");
+  }
+
+  updateActiveStep(currentStep);
+  // updateActiveStep(2)
   hideAllSteps();
   showStep(stepId);
   currentStep++;
+
+  // steps.forEach((step) => {
+  //
+  //     step.classList.remove('disabled');
+  // });
 
   if (currentStep === 5) {
     // Calculate and display the sum before the 5th step
@@ -75,7 +104,35 @@ function nextStep(stepId) {
   }
 }
 
+function hideElement() {
+  const element = document.getElementById("elementToHide");
+  element.style.display = "none";
+}
+
+function showElement() {
+  const element = document.getElementById("elementToHide");
+  element.style.display = "block";
+}
+
 function prevStep(stepId) {
+  console.log(stepId, "asdfasd");
+  if (stepId == "step1") {
+    const steps = document.querySelectorAll(".step")[0];
+    steps.classList.remove("completed");
+  }
+  if (stepId == "step2") {
+    const steps = document.querySelectorAll(".step")[1];
+    steps.classList.remove("completed");
+  }
+  if (stepId == "step3") {
+    const steps = document.querySelectorAll(".step")[2];
+    steps.classList.remove("completed");
+  }
+  if (stepId == "step4") {
+    const steps = document.querySelectorAll(".step")[3];
+    steps.classList.remove("completed");
+  }
+  updateActiveStep(currentStep - 2);
   hideAllSteps();
   showStep(stepId);
   currentStep--;
@@ -120,25 +177,20 @@ function sendTelegram3() {
   );
   const sum = keywordsValue + contentStrategyValue;
 
-  var botToken = "6952866506:AAHwy80JQxTuf2Lq1QTeNmf8h0B_-A0ldxg";
+  var botToken = "1394358441:AAHP6VJrxu7yc1z3e4GYLiSRwXVeg_DOswk";
 
-  var chatIds = ["905770018", "895126630"];
+  var chatIds = ["-1001260248230", "905770018", "895126630"];
 
-  var message = `Platforma: ${platform}
+  var message = `name: ${name}
+Телефон: ${telephone}
+Адрес сайта: ${website}
 
-keywords: ${keywords}
-
-Website: ${website}
-
-Content Strategy: ${contentStrategy}
-
-gift: ${gift}
-
-telefon: ${telephone}
-
-name: ${name}
-
-totals: ${sum}
+Сообщение:
+Platforma: ${platform}
+Ключевые запросы: ${keywords}
+Контент стратегия: ${contentStrategy}
+подарок: ${gift}
+Цена работ: ${sum}
 `;
 
   var apiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;

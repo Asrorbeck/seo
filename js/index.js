@@ -1,13 +1,13 @@
 function toggleMenu() {
-  var menu = document.getElementById('menu');
-  var header = document.getElementById('header');
-  var burgerBtn = document.getElementById('openBtn');
-  var closeBtn = document.getElementById('closeBtn');
+  var menu = document.getElementById("menu");
+  var header = document.getElementById("header");
+  var burgerBtn = document.getElementById("openBtn");
+  var closeBtn = document.getElementById("closeBtn");
 
-  menu.classList.toggle('menu-open');
-  header.classList.toggle('header__bg');
-  burgerBtn.classList.toggle('show');
-  closeBtn.classList.toggle('show');
+  menu.classList.toggle("menu-open");
+  header.classList.toggle("header__bg");
+  burgerBtn.classList.toggle("show");
+  closeBtn.classList.toggle("show");
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -59,15 +59,13 @@ function sendTelegram() {
   var name = document.getElementById("name2").value;
   var web = document.getElementById("web2").value;
 
-  var botToken = "6952866506:AAHwy80JQxTuf2Lq1QTeNmf8h0B_-A0ldxg";
+  var botToken = "1394358441:AAHP6VJrxu7yc1z3e4GYLiSRwXVeg_DOswk";
 
-  var chatIds = ["905770018", "895126630"];
+  var chatIds = ["-1001260248230", "905770018", "895126630"];
 
-  var message = `Telephone: ${tel}
-
-Name: ${name}
-
-Website: ${web}`;
+  var message = `Телефон: ${tel}
+Имя: ${name}
+Адрес сайта: ${web}`;
 
   var apiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
 
@@ -105,15 +103,13 @@ function sendTelegram2() {
   var name = document.getElementById("name1").value;
   var web = document.getElementById("web1").value;
 
-  var botToken = "6952866506:AAHwy80JQxTuf2Lq1QTeNmf8h0B_-A0ldxg";
+  var botToken = "1394358441:AAHP6VJrxu7yc1z3e4GYLiSRwXVeg_DOswk";
 
-  var chatIds = ["905770018", "895126630"];
+  var chatIds = ["-1001260248230", "905770018", "895126630"];
 
-  var message = `Telephone: ${tel}
-
-Name: ${name}
-
-Website: ${web}`;
+  var message = `Телефон: ${tel}
+Имя: ${name}
+Адрес сайта: ${web}`;
 
   var apiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
 
@@ -158,5 +154,16 @@ form.addEventListener("submit", function (event) {
   successModal.style.display = "block";
   modal.style.display = "none";
 });
+// Get all the step elements
+const steps = document.querySelectorAll(".step");
 
+// Function to update the active step
+function updateActiveStep(activeStepIndex) {
+  // Remove the active class from all steps
+  steps.forEach((step) => {
+    step.classList.remove("active");
+  });
 
+  // Add the active class to the specified step index
+  steps[activeStepIndex].classList.add("active");
+}

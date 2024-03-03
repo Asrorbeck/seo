@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/main.css" />
     <title>Seotica</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://rawgit.com/RobinHerbots/Inputmask/5.x/dist/jquery.inputmask.min.js"></script>
   </head>
   <body>
     <header class="header" id="header">
@@ -30,7 +34,12 @@
           </button>
 
           <button class="menu__btn" id="closeBtn" onclick="toggleMenu()">
-            <img src="./img/close.svg" class="closeBtn" width="47" alt="close" />
+            <img
+              src="./img/close.svg"
+              class="closeBtn"
+              width="47"
+              alt="close"
+            />
           </button>
         </div>
       </div>
@@ -105,9 +114,13 @@
         </div>
       </section>
 
-      <section class="stat">
+      <section class="stat" id="statistics">
         <div class="container">
-          <div class="stat__container">
+          <div
+            class="stat__container"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
             <ul class="stat__list">
               <li class="stat__item">
                 <h4 class="stat__title">
@@ -157,7 +170,7 @@
         </div>
       </section>
 
-      <section class="mainPart">
+      <section class="mainPart" id="mainpart">
         <div class="container">
           <div class="mainPart__container">
             <h3 class="mainPart__title">
@@ -167,9 +180,19 @@
 
             <ul class="mainPart__list">
               <li class="mainPart__item">
-                <p class="mainPart__subheader">Кейс 1</p>
+                <p
+                  class="mainPart__subheader"
+                  data-aos="fade-up"
+                  data-aos-duration="500"
+                >
+                  Кейс 1
+                </p>
 
-                <div class="mainPart__first-wrapper">
+                <div
+                  class="mainPart__first-wrapper"
+                  data-aos="fade-up"
+                  data-aos-duration="500"
+                >
                   <div class="mainPart__name-wrapper">
                     <h4 class="mainPart__name">
                       Промонолит
@@ -227,39 +250,43 @@
                     <div class="mainPart__left-wrapper">
                       <div class="mainPart__body-wrapper">
                         <p class="mainPart__body-light">Ниша клиента</p>
-
-                        <p class="mainPart__body-bold">Авиаперевозки грузов</p>
+                        <div class="dots"></div>
+                        <p class="mainPart__body-bold">Строительство</p>
                       </div>
 
                       <div class="mainPart__body-wrapper">
                         <p class="mainPart__body-light">Период продвижения</p>
-
-                        <p class="mainPart__body-bold">Январь 2022-2023</p>
+                        <div class="dots"></div>
+                        <p class="mainPart__body-bold">
+                          Август 2023—Январь 2024
+                        </p>
                       </div>
 
                       <div class="mainPart__body-wrapper">
                         <p class="mainPart__body-light">Регион продвижения</p>
-
-                        <p class="mainPart__body-bold">Москва</p>
+                        <div class="dots"></div>
+                        <p class="mainPart__body-bold">
+                          Москва и Московская область
+                        </p>
                       </div>
                     </div>
 
                     <div class="mainPart__right-wrapper">
                       <div class="mainPart__body-wrapper">
                         <p class="mainPart__body-light">Бюджет</p>
-
-                        <p class="mainPart__body-bold">40 000 руб.</p>
+                        <div class="dots"></div>
+                        <p class="mainPart__body-bold">80 000 руб.</p>
                       </div>
 
                       <div class="mainPart__body-wrapper">
                         <p class="mainPart__body-light">Рост заявок</p>
-
-                        <p class="mainPart__body-bold">42 %</p>
+                        <div class="dots"></div>
+                        <p class="mainPart__body-bold">142 %</p>
                       </div>
 
                       <div class="mainPart__body-wrapper">
                         <p class="mainPart__body-light">Рост продаж</p>
-
+                        <div class="dots"></div>
                         <p class="mainPart__body-bold">58 %</p>
                       </div>
                     </div>
@@ -272,31 +299,33 @@
                           <p class="mainPart__left-item-title">Слово</p>
                           <p class="mainPart__left-item-title-do">до</p>
                           <p class="mainPart__left-item-title-cherez">
-                            Через 12 мес
+                            Через 6 мес
                           </p>
                         </li>
 
                         <li class="mainPart__left-item">
-                          <p class="mainPart__left-item-name">авиа груз</p>
+                          <p class="mainPart__left-item-name">
+                            комплектация строительных объектов
+                          </p>
 
-                          <p class="mainPart__left-item-do">8</p>
+                          <p class="mainPart__left-item-do">99</p>
 
                           <p class="mainPart__left-item-cherez">1</p>
                         </li>
 
                         <li class="mainPart__left-item">
                           <p class="mainPart__left-item-name">
-                            авиа грузовые перевозки
+                            пластмассовые фиксаторы для арматуры
                           </p>
 
-                          <p class="mainPart__left-item-do">11</p>
+                          <p class="mainPart__left-item-do">13</p>
 
                           <p class="mainPart__left-item-cherez">1</p>
                         </li>
 
                         <li class="mainPart__left-item">
                           <p class="mainPart__left-item-name">
-                            авиа грузоперевозка
+                            подмости разборные
                           </p>
 
                           <p class="mainPart__left-item-do">-</p>
@@ -305,7 +334,19 @@
                         </li>
 
                         <li class="mainPart__left-item">
-                          <p class="mainPart__left-item-name">авиа грузы</p>
+                          <p class="mainPart__left-item-name">
+                            помост передвижной
+                          </p>
+
+                          <p class="mainPart__left-item-do">-</p>
+
+                          <p class="mainPart__left-item-cherez">1</p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">
+                            фиксатор для арматуры пластиковый
+                          </p>
 
                           <p class="mainPart__left-item-do">44</p>
 
@@ -313,55 +354,51 @@
                         </li>
 
                         <li class="mainPart__left-item">
-                          <p class="mainPart__left-item-name">авиа доставка</p>
+                          <p class="mainPart__left-item-name">
+                            комплектация строительными материалами
+                          </p>
 
-                          <p class="mainPart__left-item-do">11</p>
+                          <p class="mainPart__left-item-do">17</p>
 
                           <p class="mainPart__left-item-cherez">1</p>
                         </li>
 
                         <li class="mainPart__left-item">
                           <p class="mainPart__left-item-name">
-                            авиа доставка груза
+                            снабжение строительными материалами
                           </p>
 
-                          <p class="mainPart__left-item-do">23</p>
+                          <p class="mainPart__left-item-do">61</p>
 
                           <p class="mainPart__left-item-cherez">1</p>
                         </li>
 
                         <li class="mainPart__left-item">
                           <p class="mainPart__left-item-name">
-                            авиа курьерская доставка
+                            комплектация строительства
                           </p>
 
-                          <p class="mainPart__left-item-do">9</p>
+                          <p class="mainPart__left-item-do">40</p>
 
-                          <p class="mainPart__left-item-cherez">2</p>
-                        </li>
-
-                        <li class="mainPart__left-item">
-                          <p class="mainPart__left-item-name">авиа логистика</p>
-
-                          <p class="mainPart__left-item-do">-</p>
-
-                          <p class="mainPart__left-item-cherez">-</p>
-                        </li>
-
-                        <li class="mainPart__left-item">
-                          <p class="mainPart__left-item-name">авиа отправка</p>
-
-                          <p class="mainPart__left-item-do">63</p>
-
-                          <p class="mainPart__left-item-cherez">2</p>
+                          <p class="mainPart__left-item-cherez">1</p>
                         </li>
 
                         <li class="mainPart__left-item">
                           <p class="mainPart__left-item-name">
-                            авиа отправка грузов
+                            снабжение строительных компаний
                           </p>
 
-                          <p class="mainPart__left-item-do">28</p>
+                          <p class="mainPart__left-item-do">18</p>
+
+                          <p class="mainPart__left-item-cherez">1</p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">
+                            строительные леса продажа
+                          </p>
+
+                          <p class="mainPart__left-item-do">82</p>
 
                           <p class="mainPart__left-item-cherez">1</p>
                         </li>
@@ -376,7 +413,7 @@
                       <img
                         src="./img/graph.png"
                         alt="graphics of stats"
-                        class="mainPart__bottom-img1"
+                        class="mainPart__bottom-img1 first-img"
                       />
 
                       <img
@@ -392,9 +429,19 @@
               </li>
 
               <li class="mainPart__item">
-                <p class="mainPart__subheader">Кейс 2</p>
+                <p
+                  class="mainPart__subheader"
+                  data-aos="fade-up"
+                  data-aos-duration="500"
+                >
+                  Кейс 2
+                </p>
 
-                <div class="mainPart__first-wrapper">
+                <div
+                  class="mainPart__first-wrapper"
+                  data-aos="fade-up"
+                  data-aos-duration="500"
+                >
                   <div class="mainPart__name-wrapper">
                     <h4 class="mainPart__name">
                       Завод Кранов
@@ -447,40 +494,44 @@
                     <div class="mainPart__left-wrapper">
                       <div class="mainPart__body-wrapper">
                         <p class="mainPart__body-light">Ниша клиента</p>
-
-                        <p class="mainPart__body-bold">Авиаперевозки грузов</p>
+                        <div class="dots"></div>
+                        <p class="mainPart__body-bold">
+                          Грузоподъёмное оборудование
+                        </p>
                       </div>
 
                       <div class="mainPart__body-wrapper">
                         <p class="mainPart__body-light">Период продвижения</p>
-
-                        <p class="mainPart__body-bold">Январь 2022-2023</p>
+                        <div class="dots"></div>
+                        <p class="mainPart__body-bold">
+                          Сентябрь 2023 - Декабрь 2023
+                        </p>
                       </div>
 
                       <div class="mainPart__body-wrapper">
                         <p class="mainPart__body-light">Регион продвижения</p>
-
-                        <p class="mainPart__body-bold">Москва</p>
+                        <div class="dots"></div>
+                        <p class="mainPart__body-bold">Россия</p>
                       </div>
                     </div>
 
                     <div class="mainPart__right-wrapper">
                       <div class="mainPart__body-wrapper">
                         <p class="mainPart__body-light">Бюджет</p>
-
-                        <p class="mainPart__body-bold">40 000 руб.</p>
+                        <div class="dots"></div>
+                        <p class="mainPart__body-bold">80 000 руб.</p>
                       </div>
 
                       <div class="mainPart__body-wrapper">
                         <p class="mainPart__body-light">Рост заявок</p>
-
-                        <p class="mainPart__body-bold">42 %</p>
+                        <div class="dots"></div>
+                        <p class="mainPart__body-bold">340 %</p>
                       </div>
 
                       <div class="mainPart__body-wrapper">
                         <p class="mainPart__body-light">Рост продаж</p>
-
-                        <p class="mainPart__body-bold">58 %</p>
+                        <div class="dots"></div>
+                        <p class="mainPart__body-bold">62 %</p>
                       </div>
                     </div>
                   </div>
@@ -491,13 +542,11 @@
                         <li class="mainPart__left-item">
                           <p class="mainPart__left-item-title">Слово</p>
                           <p class="mainPart__left-item-title-do">до</p>
-                          <p class="mainPart__left-item-title-cherez">
-                            Через 12 мес
-                          </p>
+                          <p class="mainPart__left-item-title-cherez">3 мес</p>
                         </li>
 
                         <li class="mainPart__left-item">
-                          <p class="mainPart__left-item-name">авиа груз</p>
+                          <p class="mainPart__left-item-name">кран балка 2т</p>
 
                           <p class="mainPart__left-item-do">8</p>
 
@@ -506,7 +555,7 @@
 
                         <li class="mainPart__left-item">
                           <p class="mainPart__left-item-name">
-                            авиа грузовые перевозки
+                            кран балка 3 тонны
                           </p>
 
                           <p class="mainPart__left-item-do">11</p>
@@ -515,9 +564,7 @@
                         </li>
 
                         <li class="mainPart__left-item">
-                          <p class="mainPart__left-item-name">
-                            авиа грузоперевозка
-                          </p>
+                          <p class="mainPart__left-item-name">кран балка 3т</p>
 
                           <p class="mainPart__left-item-do">-</p>
 
@@ -525,7 +572,10 @@
                         </li>
 
                         <li class="mainPart__left-item">
-                          <p class="mainPart__left-item-name">авиа грузы</p>
+                          <p class="mainPart__left-item-name">
+                            кран консольный <br />
+                            электрический
+                          </p>
 
                           <p class="mainPart__left-item-do">44</p>
 
@@ -533,7 +583,9 @@
                         </li>
 
                         <li class="mainPart__left-item">
-                          <p class="mainPart__left-item-name">авиа доставка</p>
+                          <p class="mainPart__left-item-name">
+                            кран мостовой подвесной
+                          </p>
 
                           <p class="mainPart__left-item-do">11</p>
 
@@ -542,7 +594,7 @@
 
                         <li class="mainPart__left-item">
                           <p class="mainPart__left-item-name">
-                            авиа доставка груза
+                            монтаж мостового крана
                           </p>
 
                           <p class="mainPart__left-item-do">23</p>
@@ -552,7 +604,7 @@
 
                         <li class="mainPart__left-item">
                           <p class="mainPart__left-item-name">
-                            авиа курьерская доставка
+                            производство мостовых кранов
                           </p>
 
                           <p class="mainPart__left-item-do">9</p>
@@ -561,7 +613,9 @@
                         </li>
 
                         <li class="mainPart__left-item">
-                          <p class="mainPart__left-item-name">авиа логистика</p>
+                          <p class="mainPart__left-item-name">
+                            модернизация козлового крана
+                          </p>
 
                           <p class="mainPart__left-item-do">-</p>
 
@@ -569,7 +623,9 @@
                         </li>
 
                         <li class="mainPart__left-item">
-                          <p class="mainPart__left-item-name">авиа отправка</p>
+                          <p class="mainPart__left-item-name">
+                            модернизация кранов
+                          </p>
 
                           <p class="mainPart__left-item-do">63</p>
 
@@ -578,7 +634,7 @@
 
                         <li class="mainPart__left-item">
                           <p class="mainPart__left-item-name">
-                            авиа отправка грузов
+                            монтаж кранового оборудования
                           </p>
 
                           <p class="mainPart__left-item-do">28</p>
@@ -612,9 +668,19 @@
               </li>
 
               <li class="mainPart__item">
-                <p class="mainPart__subheader">Кейс 3</p>
+                <p
+                  class="mainPart__subheader"
+                  data-aos="fade-up"
+                  data-aos-duration="500"
+                >
+                  Кейс 3
+                </p>
 
-                <div class="mainPart__first-wrapper">
+                <div
+                  class="mainPart__first-wrapper"
+                  data-aos="fade-up"
+                  data-aos-duration="500"
+                >
                   <div class="mainPart__name-wrapper">
                     <h4 class="mainPart__name">
                       Эльбрус
@@ -671,19 +737,21 @@
                     <div class="mainPart__left-wrapper">
                       <div class="mainPart__body-wrapper">
                         <p class="mainPart__body-light">Ниша клиента</p>
-
-                        <p class="mainPart__body-bold">Авиаперевозки грузов</p>
+                        <div class="dots"></div>
+                        <p class="mainPart__body-bold">Авто запчасти</p>
                       </div>
 
                       <div class="mainPart__body-wrapper">
                         <p class="mainPart__body-light">Период продвижения</p>
-
-                        <p class="mainPart__body-bold">Январь 2022-2023</p>
+                        <div class="dots"></div>
+                        <p class="mainPart__body-bold">
+                          Июль 2023 - Январь 2024
+                        </p>
                       </div>
 
                       <div class="mainPart__body-wrapper">
                         <p class="mainPart__body-light">Регион продвижения</p>
-
+                        <div class="dots"></div>
                         <p class="mainPart__body-bold">Москва</p>
                       </div>
                     </div>
@@ -691,20 +759,20 @@
                     <div class="mainPart__right-wrapper">
                       <div class="mainPart__body-wrapper">
                         <p class="mainPart__body-light">Бюджет</p>
-
-                        <p class="mainPart__body-bold">40 000 руб.</p>
+                        <div class="dots"></div>
+                        <p class="mainPart__body-bold">120 000 руб.</p>
                       </div>
 
                       <div class="mainPart__body-wrapper">
                         <p class="mainPart__body-light">Рост заявок</p>
-
-                        <p class="mainPart__body-bold">42 %</p>
+                        <div class="dots"></div>
+                        <p class="mainPart__body-bold">154 %</p>
                       </div>
 
                       <div class="mainPart__body-wrapper">
                         <p class="mainPart__body-light">Рост продаж</p>
-
-                        <p class="mainPart__body-bold">58 %</p>
+                        <div class="dots"></div>
+                        <p class="mainPart__body-bold">72 %</p>
                       </div>
                     </div>
                   </div>
@@ -716,57 +784,63 @@
                           <p class="mainPart__left-item-title">Слово</p>
                           <p class="mainPart__left-item-title-do">до</p>
                           <p class="mainPart__left-item-title-cherez">
-                            Через 12 мес
+                            Через 6 мес
                           </p>
                         </li>
 
                         <li class="mainPart__left-item">
-                          <p class="mainPart__left-item-name">авиа груз</p>
+                          <p class="mainPart__left-item-name">
+                            каталог запчастей рено логан
+                          </p>
 
-                          <p class="mainPart__left-item-do">8</p>
+                          <p class="mainPart__left-item-do">68</p>
 
                           <p class="mainPart__left-item-cherez">1</p>
                         </li>
 
                         <li class="mainPart__left-item">
                           <p class="mainPart__left-item-name">
-                            авиа грузовые перевозки
+                            цены на запчасти рено логан
                           </p>
 
-                          <p class="mainPart__left-item-do">11</p>
+                          <p class="mainPart__left-item-do">16</p>
 
                           <p class="mainPart__left-item-cherez">1</p>
                         </li>
 
                         <li class="mainPart__left-item">
                           <p class="mainPart__left-item-name">
-                            авиа грузоперевозка
+                            новые запчасти рено
                           </p>
 
-                          <p class="mainPart__left-item-do">-</p>
-
-                          <p class="mainPart__left-item-cherez">1</p>
-                        </li>
-
-                        <li class="mainPart__left-item">
-                          <p class="mainPart__left-item-name">авиа грузы</p>
-
-                          <p class="mainPart__left-item-do">44</p>
-
-                          <p class="mainPart__left-item-cherez">1</p>
-                        </li>
-
-                        <li class="mainPart__left-item">
-                          <p class="mainPart__left-item-name">авиа доставка</p>
-
-                          <p class="mainPart__left-item-do">11</p>
+                          <p class="mainPart__left-item-do">25</p>
 
                           <p class="mainPart__left-item-cherez">1</p>
                         </li>
 
                         <li class="mainPart__left-item">
                           <p class="mainPart__left-item-name">
-                            авиа доставка груза
+                            рено запчасти цены
+                          </p>
+
+                          <p class="mainPart__left-item-do">64</p>
+
+                          <p class="mainPart__left-item-cherez">1</p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">
+                            skoda fabia запчасти
+                          </p>
+
+                          <p class="mainPart__left-item-do">37</p>
+
+                          <p class="mainPart__left-item-cherez">1</p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">
+                            volkswagen passat запчасти
                           </p>
 
                           <p class="mainPart__left-item-do">23</p>
@@ -776,36 +850,38 @@
 
                         <li class="mainPart__left-item">
                           <p class="mainPart__left-item-name">
-                            авиа курьерская доставка
+                            автозапчасти форд фокус
                           </p>
 
-                          <p class="mainPart__left-item-do">9</p>
+                          <p class="mainPart__left-item-do">89</p>
 
-                          <p class="mainPart__left-item-cherez">2</p>
-                        </li>
-
-                        <li class="mainPart__left-item">
-                          <p class="mainPart__left-item-name">авиа логистика</p>
-
-                          <p class="mainPart__left-item-do">-</p>
-
-                          <p class="mainPart__left-item-cherez">-</p>
-                        </li>
-
-                        <li class="mainPart__left-item">
-                          <p class="mainPart__left-item-name">авиа отправка</p>
-
-                          <p class="mainPart__left-item-do">63</p>
-
-                          <p class="mainPart__left-item-cherez">2</p>
+                          <p class="mainPart__left-item-cherez">1</p>
                         </li>
 
                         <li class="mainPart__left-item">
                           <p class="mainPart__left-item-name">
-                            авиа отправка грузов
+                            запчасти audi a6
+                          </p>
+
+                          <p class="mainPart__left-item-do">31</p>
+
+                          <p class="mainPart__left-item-cherez">1</p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">
+                            запчасти chevrolet cobalt
                           </p>
 
                           <p class="mainPart__left-item-do">28</p>
+
+                          <p class="mainPart__left-item-cherez">1</p>
+                        </li>
+
+                        <li class="mainPart__left-item">
+                          <p class="mainPart__left-item-name">запчасти ford</p>
+
+                          <p class="mainPart__left-item-do">41</p>
 
                           <p class="mainPart__left-item-cherez">1</p>
                         </li>
@@ -820,7 +896,7 @@
                       <img
                         src="./img/graph3.png"
                         alt="graphics of stats"
-                        class="mainPart__bottom-img1"
+                        class="mainPart__bottom-img1 third-img"
                       />
 
                       <img
@@ -835,10 +911,6 @@
                 </div>
               </li>
             </ul>
-
-            <div class="mainPart__btnwrapper">
-              <button class="mainPart__btn">Больше кейсов</button>
-            </div>
           </div>
         </div>
       </section>
@@ -846,14 +918,35 @@
       <section class="form" id="myForm">
         <div class="container">
           <div class="form__container">
-            <h3 class="form__header">Хотите так же?</h3>
+            <h3 class="form__header" data-aos="fade-up" data-aos-duration="500">
+              Хотите так же?
+            </h3>
 
-            <p class="form__bodyheader">
+            <p
+              class="form__bodyheader"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
               Ответьте на 4 вопроса, узнайте предварительную цену и
               <span class="form__dec">заберите подарок</span>
             </p>
-
-            <div class="form__step active" id="step1">
+            <div
+              class="progress-bar"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
+              <div class="step stick active">01</div>
+              <div class="step stick">02</div>
+              <div class="step stick">03</div>
+              <div class="step stick">04</div>
+              <div class="step stick">05</div>
+            </div>
+            <div
+              class="form__step active"
+              id="step1"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
               <label class="form__label">Выберите площадку продвижения:</label>
 
               <p class="form__subheader">
@@ -877,7 +970,7 @@
                 <button
                   type="button"
                   class="form__btn-next"
-                  onclick="updateOptionsAndNext('step2')"
+                  onclick="updateOptionsAndNext('step2');"
                 >
                   Следующий шаг <span class="arrow">></span>
                 </button>
@@ -1013,11 +1106,10 @@
                   <input
                     type="tel"
                     class="form__input"
-                    id="tel"
-                    placeholder="+7 (___) ___-__-__*"
+                    id="phone"
+                    name="phone"
+                    placeholder="+7(000)000-00-00*"
                     required
-                    oninput="formatPhoneNumber(this)"
-                    maxlength="17"
                   />
 
                   <input
@@ -1056,10 +1148,14 @@
         </div>
       </section>
 
-      <section class="result">
+      <section id="result" class="result">
         <div class="container">
           <div class="result__container">
-            <div class="result__left">
+            <div
+              class="result__left"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
               <h3 class="result__title">
                 <span class="result__dec">Достигаем</span> успешных результатов
               </h3>
@@ -1074,7 +1170,7 @@
               </div>
             </div>
 
-            <ul class="result__list">
+            <ul class="result__list" data-aos="fade-up" data-aos-duration="500">
               <li class="result__item">
                 <h4 class="result__item-subtitle">
                   <span class="result__item-dec">—</span> Опыт 15 лет
@@ -1128,10 +1224,14 @@
         </div>
       </section>
 
-      <section class="contact">
+      <section id="contact" class="contact">
         <div class="container">
           <div class="contact__container">
-            <h3 class="contact__title">
+            <h3
+              class="contact__title"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
               <span class="contact__dec"
                 >Пора достигать результатов,<br />
               </span>
@@ -1140,6 +1240,8 @@
 
             <form
               id="forma"
+              data-aos="fade-up"
+              data-aos-duration="500"
               class="contact__form"
               onsubmit="return sendTelegram()"
             >
@@ -1150,8 +1252,6 @@
                   id="tel2"
                   placeholder="+7 (___) ___-__-__*"
                   required
-                  oninput="formatPhoneNumber(this)"
-                  maxlength="17"
                 />
 
                 <input
@@ -1193,7 +1293,12 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__container">
-          <a href="#" class="footer__logo-link">
+          <a
+            href="#"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            class="footer__logo-link"
+          >
             <img
               src="./img/footer-logo.svg"
               alt="footer"
@@ -1201,7 +1306,12 @@
             />
           </a>
 
-          <a href="#" class="footer__wrapper">
+          <a
+            href="#"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            class="footer__wrapper"
+          >
             <p class="footer__body">
               Бесплатная консультация<br />
               в Telegram
@@ -1244,10 +1354,8 @@
             type="tel"
             class="modal__input"
             id="tel1"
-            placeholder="+7 (___) ___-__-__*"
+            placeholder="+7 (000) 000-00-00*"
             required
-            oninput="formatPhoneNumber(this)"
-            maxlength="17"
           />
 
           <input
@@ -1317,62 +1425,56 @@
 
         <ul class="menu__list">
           <li class="menu__item">
-            <a href="#" class="menu__item-link">Преимущества</a>
+            <a href="#statistics" class="menu__item-link">Преимущества</a>
           </li>
 
           <li class="menu__item">
-            <a href="#" class="menu__item-link">Кейсы</a>
+            <a href="#mainpart" class="menu__item-link">Кейсы</a>
           </li>
 
           <li class="menu__item">
-            <a href="#" class="menu__item-link">Калькулятор</a>
+            <a href="#myForm" class="menu__item-link">Калькулятор</a>
           </li>
 
           <li class="menu__item">
-            <a href="#" class="menu__item-link">Услуги</a>
-          </li>
-
-          <li class="menu__item">
-            <a href="#" class="menu__item-link">Контакты</a>
+            <a href="#contact" class="menu__item-link">Контакты</a>
           </li>
         </ul>
       </div>
 
       <div class="menu__m-container">
         <h4 class="menu__header">
-          Студия <span class="menu__dec">SEO- <br></span>маркетинга полного цикла
+          Студия <span class="menu__dec">SEO- <br /></span>маркетинга полного
+          цикла
         </h4>
 
         <ul class="menu__list">
           <li class="menu__item">
-            <a href="#" class="menu__item-link">Преимущества</a>
+            <a href="#statistics" class="menu__item-link">Преимущества</a>
           </li>
 
           <li class="menu__item">
-            <a href="#" class="menu__item-link">Кейсы</a>
+            <a href="#mainpart" class="menu__item-link">Кейсы</a>
           </li>
 
           <li class="menu__item">
-            <a href="#" class="menu__item-link">Калькулятор</a>
+            <a href="#myForm" class="menu__item-link">Калькулятор</a>
           </li>
 
           <li class="menu__item">
-            <a href="#" class="menu__item-link">Услуги</a>
-          </li>
-
-          <li class="menu__item">
-            <a href="#" class="menu__item-link">Контакты</a>
+            <a href="#contact" class="menu__item-link">Контакты</a>
           </li>
         </ul>
 
         <div class="menu__wrapper">
           <a href="tel: +89251170046" class="menu__link"
-            ><img class="menu__img" src="./img/tel.svg" alt="telefon" /> 8 925 117 00 46</a
+            ><img class="menu__img" src="./img/tel.svg" alt="telefon" /> 8 925
+            117 00 46</a
           >
 
           <a href="#" class="menu__link"
-            ><img class="menu__img" src="./img/tg.svg" alt="telegram" /> Бесплатная консультация в
-            Telegram</a
+            ><img class="menu__img" src="./img/tg.svg" alt="telegram" />
+            Бесплатная консультация в Telegram</a
           >
         </div>
       </div>
@@ -1380,5 +1482,18 @@
 
     <script src="./js/index.js"></script>
     <script src="./js/form.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#phone").inputmask("+7 (999) 999-99-99");
+        $("#tel1").inputmask("+7 (999) 999-99-99");
+        $("#tel2").inputmask("+7 (999) 999-99-99");
+      });
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
